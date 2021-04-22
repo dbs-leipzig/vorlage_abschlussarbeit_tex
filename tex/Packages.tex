@@ -4,13 +4,13 @@
 \usepackage[
 	automark,			% Kapitelangaben in Kopfzeile automatisch erstellen
 	headsepline,	% Trennlinie unter Kopfzeile
-	ilines				% Trennlinie linksbündig ausrichten
+	ilines				% Trennlinie linksbÃ¼ndig ausrichten
 ]{scrpage2}
 
 \usepackage{pseudocode}
 \usepackage{nicefrac}
 
-% Für eine schöne Anordnung von Bildern
+% FÃ¼r eine schÃ¶ne Anordnung von Bildern
 \usepackage{subfigure}
 
 \usepackage{dsfont}
@@ -26,14 +26,14 @@
 \usepackage[ngerman]{babel}
 
 % Umlaute ------------------------------------------------------------------
-% 		Umlaute/Sonderzeichen wie äüöß direkt im Quelltext verwenden (CodePage).
+% 		Umlaute/Sonderzeichen wie Ã¤Ã¶Ã¼ÃŸ direkt im Quelltext verwenden (CodePage).
 %		Erlaubt automatische Trennung von Worten mit Umlauten.
 % --------------------------------------------------------------------------
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-%\usepackage{ae} % "schöneres" ß
+%\usepackage{ae} % "schÃ¶neres" Ã¤
 \usepackage{textcomp} % Euro-Zeichen etc.
-\usepackage{lmodern} % schööön
+\usepackage{lmodern} % schÃ¶Ã¶Ã¶n
 
 % Grafiken -----------------------------------------------------------------
 % 		Einbinden von Grafiken [draft oder final]
@@ -43,35 +43,35 @@
 \usepackage{wrapfig}
 \graphicspath{{Bilder/}} % Dort liegen die Bilder des Dokuments
 
-% Befehle aus AMSTeX für mathematische Symbole z.B. \boldsymbol \mathbb ----
+% Befehle aus AMSTeX fÃ¼r mathematische Symbole z.B. \boldsymbol \mathbb ----
 \usepackage{amsmath,amsfonts,amsthm}
 
-% Für Index-Ausgabe; \printindex -------------------------------------------
+% FÃ¼r Index-Ausgabe; \printindex -------------------------------------------
 \usepackage{makeidx}
 
-% Einfache Definition der Zeilenabstände und Seitenränder etc. -------------
+% Einfache Definition der ZeilenabstÃ¤nde und SeitenrÃ¤nder etc. -------------
 \usepackage{setspace}
 \usepackage{geometry}
 
-% für gedrehte Tabellen
+% fÃ¼r gedrehte Tabellen
 \usepackage{rotating} 
 
 % Symbolverzeichnis --------------------------------------------------------
 % 	Symbolverzeichnisse bequem erstellen, beruht auf MakeIndex.
 % 		makeindex.exe %Name%.nlo -s nomencl.ist -o %Name%.nls
 % 	erzeugt dann das Verzeichnis. Dieser Befehl kann z.B. im TeXnicCenter
-%		als Postprozessor eingetragen werden, damit er nicht ständig manuell
-%		ausgeführt werden muss.
+%		als Postprozessor eingetragen werden, damit er nicht stÃ¤ndig manuell
+%		ausgefÃ¼hrt werden muss.
 %		Die Definitionen sind ausgegliedert in die Datei Abkuerzungen.tex.
 % --------------------------------------------------------------------------
 \usepackage[intoc]{nomencl}
   \let\abbrev\nomenclature
-  \renewcommand{\nomname}{Abkürzungsverzeichnis}
+  \renewcommand{\nomname}{AbkÃ¼rzungsverzeichnis}
   \setlength{\nomlabelwidth}{.25\hsize}
   \renewcommand{\nomlabel}[1]{#1 \dotfill}
   \setlength{\nomitemsep}{-\parsep}
 
-% Zum Umfließen von Bildern -------------------------------------------------
+% Zum UmflieÃŸen von Bildern -------------------------------------------------
 \usepackage{floatflt}
 
 % Zum Einbinden von Programmcode --------------------------------------------
@@ -107,7 +107,7 @@
 \usepackage{url}
 
 
-%% Wichtig für korrekte Zitierweise ------------------------------------------
+%% Wichtig fï¿½r korrekte Zitierweise ------------------------------------------
 
 %\usepackage[square]{natbib}
 %% Quellenangaben in eckige Klammern fassen ----------------------------------
@@ -118,7 +118,7 @@
 %\usepackage{babelbib}
 %\bibliographystyle{geralpha}
 
-% ermöglicht Zeilenumbrüche in Captions
+% ermÃ¶glicht ZeilenumbrÃ¼che in Captions
 \usepackage{caption}
 
 
@@ -132,18 +132,18 @@ pdfcreator={\autor},
 pdfsubject={\titel},
 pdfkeywords={\titel},
 colorlinks=true,
-%linkcolor=red, % einfache interne Verknüpfungen
+%linkcolor=red, % einfache interne VerknÃ¼pfungen
 %anchorcolor=black,% Ankertext
-%citecolor=blue, % Verweise auf Literaturverzeichniseinträge im Text
-%filecolor=magenta, % Verknüpfungen, die lokale Dateien öffnen
-%menucolor=red, % Acrobat-Menüpunkte
+%citecolor=blue, % Verweise auf LiteraturverzeichniseintrÃ¤ge im Text
+%filecolor=magenta, % VerknÃ¼pfungen, die lokale Dateien Ã¶ffnen
+%menucolor=red, % Acrobat-MenÃ¼punkte
 %urlcolor=cyan, 
-% für die Druckversion können die Farben ausgeschaltet werden:
-linkcolor=black, % einfache interne Verknüpfungen
+% fÃ¼r die Druckversion kÃ¶nnen die Farben ausgeschaltet werden:
+linkcolor=black, % einfache interne VerknÃ¼pfungen
 anchorcolor=black,% Ankertext
-citecolor=black, % Verweise auf Literaturverzeichniseinträge im Text5
-filecolor=black, % Verknüpfungen, die lokale Dateien öffnen
-menucolor=black, % Acrobat-Menüpunkte
+citecolor=black, % Verweise auf LiteraturverzeichniseintrÃ¤ge im Text5
+filecolor=black, % VerknÃ¼pfungen, die lokale Dateien Ã¶ffnen
+menucolor=black, % Acrobat-MenÃ¼punkte
 urlcolor=black, 
 %backref,
 %pagebackref,
@@ -153,11 +153,11 @@ hypertexnames=false,% zur korrekten Erstellung der Bookmarks
 linktocpage % Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
 ]{hyperref}
 
-% Zum fortlaufenden Durchnummerieren der Fußnoten ---------------------------
+% Zum fortlaufenden Durchnummerieren der FuÃŸnoten ---------------------------
 \usepackage{chngcntr}
 
 
-% für lange Tabellen
+% fÃ¼r lange Tabellen
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{ragged2e}
@@ -165,14 +165,14 @@ linktocpage % Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
 
 \usepackage{supertabular}
 
-% Spaltendefinition rechtsbündig mit definierter Breite ---------------------
+% Spaltendefinition rechtsbÃ¼ndig mit definierter Breite ---------------------
 \newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
 
-% Formatierung von Listen ändern
+% Formatierung von Listen Ã¤ndern
 \usepackage{paralist}
 % Standardeinstellungen:
 % \setdefaultleftmargin{2.5em}{2.2em}{1.87em}{1.7em}{1em}{1em}
 
 \usepackage{tablefootnote}
-% für Ausblenden der Seitenzahl
+% fÃ¼r Ausblenden der Seitenzahl
 \usepackage{lipsum}

@@ -1,6 +1,6 @@
 % Meta-Informationen -------------------------------------------------------
-%		Informationen über das Dokument, wie z.B. Titel, Autor, Matrikelnr. etc
-%		werden in der Datei _Meta.tex definiert und können danach global
+%		Informationen Ã¼ber das Dokument, wie z.B. Titel, Autor, Matrikelnr. etc
+%		werden in der Datei _Meta.tex definiert und kÃ¶nnen danach global
 %		verwendet werden.
 % --------------------------------------------------------------------------
 \input{_Meta}
@@ -10,17 +10,17 @@
 %		Die Option draft sollte beim fertigen Dokument ausgeschaltet werden.
 % --------------------------------------------------------------------------
 \documentclass[
-	11pt,					% Schriftgröße
+	11pt,					% SchriftgrÃ¶ÃŸe
 	DIV10,
-	ngerman,				% für Umlaute, Silbentrennung etc.
+	ngerman,				% fÃ¼r Umlaute, Silbentrennung etc.
 	a4paper,				% Papierformat
 	oneside,				% einseitiges Dokument
 	titlepage,				% es wird eine Titelseite verwendet
-	halfparskip,			% Abstand zwischen Absätzen (halbe Zeile)
-	normalheadings,			% Größe der Überschriften verkleinern
-	liststotoc,				% Verzeichnisse im Inhaltsverzeichnis aufführen
-	bibtotoc,				% Literaturverzeichnis im Inhaltsverzeichnis aufführen
-	idxtotoc,				% Index im Inhaltsverzeichnis aufführen
+	halfparskip,			% Abstand zwischen AbsÃ¤tzen (halbe Zeile)
+	normalheadings,			% GrÃ¶ÃŸe der Ãœberschriften verkleinern
+	liststotoc,				% Verzeichnisse im Inhaltsverzeichnis auffÃ¼hren
+	bibtotoc,				% Literaturverzeichnis im Inhaltsverzeichnis auffÃ¼hren
+	idxtotoc,				% Index im Inhaltsverzeichnis auffÃ¼hren
 	tablecaptionabove,		% Beschriftung von Tabellen oberhalb ausgeben
 	final					% Status des Dokuments (final/draft)
 ]{scrreprt}
@@ -28,32 +28,33 @@
 \renewcommand*\chapterheadstartvskip{\vspace*{-1.0cm}}
 
 % Bentigte Packages -------------------------------------------------------
-%		Weitere Packages, die benötigt werden, sind in die Datei Packages.tex
-%		"ausgelagert", um die Vorlage möglichst übersichtlich zu halten.
+%		Weitere Packages, die benÃ¶tigt werden, sind in die Datei Packages.tex
+%		"ausgelagert", um die Vorlage mÃ¶glichst Ã¼bersichtlich zu halten.
 % --------------------------------------------------------------------------
 \input{Packages}
 
-% Erstellung eines Index und Abkürzungsverzeichnisses aktivieren -----------
+% Erstellung eines Index und AbkÃ¼rzungsverzeichnisses aktivieren -----------
 \makeindex
 % makeindex Masterarbeit.nlo -s nomencl.ist -o Masterarbeit.nls
 \makenomenclature
 
 
-% Kopf- und Fußzeilen, Seitenränder etc. -----------------------------------
+% Kopf- und FuÃŸzeilen, SeitenrÃ¤nder etc. -----------------------------------
 \input{Seitenstil}
 
-% Eigene Definitionen für Silbentrennung
+% Eigene Definitionen fÃ¼r Silbentrennung
 \include{Silbentrennung}
 % Das eigentliche Dokument -------------------------------------------------
 %		Der eigentliche Inhalt des Dokuments beginnt hier. Die einzelnen Seiten
 %		und Kapitel werden in eigene Dateien ausgelagert und hier nur inkludiert.
 % --------------------------------------------------------------------------
+
 \begin{document}
 % auch subsubsection nummerieren
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-% keine Kopf-/Fußzeilen bei Deckblatt und Abstract
+% keine Kopf-/FuÃŸzeilen bei Deckblatt und Abstract
 \ofoot{}
 % Deckblatt
 \include{Deckblatt}
@@ -63,14 +64,14 @@
 \ofoot{\pagemark}
 
 % Seitennummerierung -------------------------------------------------------
-%		Vor dem Hauptteil werden die Seiten in großen römischen Ziffern 
+%		Vor dem Hauptteil werden die Seiten in groÃŸen rÃ¶mischen Ziffern 
 %		nummeriert...
 % --------------------------------------------------------------------------
 \pagenumbering{Roman}
 
 \tableofcontents			% Inhaltsverzeichnis
 
-% Abkürzungsverzeichnis ----------------------------------------------------
+% AbkÃ¼rzungsverzeichnis ----------------------------------------------------
 %\input{Inhalt/Glossar}
 %\printnomenclature
 %\label{sec:Glossar}
@@ -87,9 +88,9 @@
 
 
 % Inhalt -------------------------------------------------------------------
-%		Hier können jetzt die einzelnen Kapitel inkludiert werden. Sie müssen
-%		in den entsprechenden .TEX-Dateien vorliegen. Die Dateinamen können
-% 		natürlich angepasst werden.
+%		Hier kÃ¶nnen jetzt die einzelnen Kapitel inkludiert werden. Sie mÃ¼ssen
+%		in den entsprechenden .TEX-Dateien vorliegen. Die Dateinamen kÃ¶nnen
+% 		natÃ¼rlich angepasst werden.
 % --------------------------------------------------------------------------
 \include{Inhalt/Einleitung}
 
@@ -97,7 +98,7 @@
 
 % Literaturverzeichnis -----------------------------------------------------
 %		Das Literaturverzeichnis wird aus der Datenbank Bibliographie.bib 
-% 		erstellt. Die genaue Verwendung von bibtex wird hier jedoch nicht erklärt.
+% 		erstellt. Die genaue Verwendung von bibtex wird hier jedoch nicht erklÃ¤rt.
 %		Link: http://de.wikipedia.org/wiki/BibTeX
 % --------------------------------------------------------------------------
 \bibliography{quellen}
@@ -107,7 +108,7 @@
 
 % \setcounter{page}{122}
 % \pagenumbering{gobble}
-\include{Inhalt/Erklaerung}	% Selbständigkeitserklärung 
+\include{Inhalt/Erklaerung}	% SelbstÃ¤ndigkeitserklÃ¤rung 
 
 % Anhang -------------------------------------------------------------------
 %		Die Inhalte des Anhangs werden analog zu den Kapiteln inkludiert.
@@ -124,7 +125,7 @@
 % Index --------------------------------------------------------------------
 %		Zum Erstellen eines Index, die folgende Zeile auskommentieren.
 % --------------------------------------------------------------------------
-%\printindex		% Index hier einfügen
+%\printindex		% Index hier einfÃ¼gen
 %\ofoot{}
 %\include{Inhalt/Thesen}	% Thesen 
 

@@ -2,17 +2,17 @@
 \onehalfspacing 
 % \setstretch{1,5}
 
-% Seitenr‰nder -------------------------------------------------------------
+% Seitenr√§nder -------------------------------------------------------------
 \geometry{paper=a4paper,left=25mm,right=20mm,top=20mm, bottom=25mm}
-% Notfall maﬂe :)
+% Notfall ma√üe :)
 %\geometry{paper=a4paper,left=35mm,right=25mm,top=25mm, bottom=25mm}
 
 
 
-% Kopf- und Fuﬂzeilen ------------------------------------------------------
+% Kopf- und Fu√üzeilen ------------------------------------------------------
 \pagestyle{scrheadings}
 
-% Kopf- und Fuﬂzeile auch auf Kapitelanfangsseiten -------------------------
+% Kopf- und Fu√üzeile auch auf Kapitelanfangsseiten -------------------------
 \renewcommand*{\chapterpagestyle}{scrheadings}
 
 % Schriftform der Kopfzeile ------------------------------------------------
@@ -23,11 +23,10 @@
 \chead{}
 %\ohead{\includegraphics[scale=1]{Bilder/logoKlein.JPG}}
 \ohead{}
-\setlength{\headheight}{8mm} % Hˆhe der Kopfzeile
-\setheadwidth[0pt]{textwithmarginpar} % Kopfzeile ¸ber den Text hinaus verbreitern
-\setheadsepline[text]{0.4pt} % Trennlinie unter Kopfzeile
+\setlength{\headheight}{8mm} % H√∂he der Kopfzeile
+\setheadwidth[0pt]{textwithmarginpar} % Kopfzeile √ºber den Text hinaus verbreitern
 
-% Fuﬂzeile -----------------------------------------------------------------
+% Fu√üzeile -----------------------------------------------------------------
 % \ifoot{\copyright\ \autor \\ \invnr}
 % \ifoot{\copyright\ \autor \\ \matrikelnr}
 \ifoot{\autor \\ \matrikelnr}
@@ -35,6 +34,9 @@
 \ofoot{\pagemark}
 \setlength{\footskip}{12mm}
 \setfootwidth[0pt]{text}
+
+% √úberschriften ------------------------------------------------------------
+\renewcommand*\chapterheadstartvskip{\vspace*{-0.5cm}} % Platz vor einer √úberschrift eines neuen Kapitels
 
 
 % erzeugt ein wenig mehr Platz hinter einem Punkt --------------------------
@@ -64,7 +66,7 @@
 		captionpos=b
 }%
 
-% Fuﬂnoten fortlaufend durchnummerieren ------------------------------------
+% Fu√ünoten fortlaufend durchnummerieren ------------------------------------
 \counterwithout{footnote}{chapter}
 
 % Definitionen
